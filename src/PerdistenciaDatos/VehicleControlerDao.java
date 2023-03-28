@@ -1,16 +1,16 @@
-
 package PerdistenciaDatos;
 
 import backend.Vehicle;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JFrame;
 
 
-
-public class VehicleControlerDao {
+public class VehicleControlerDao extends JFrame{
     
-  
     public static void createVehicledDB(Vehicle vehicle){
         Conexion db_connect = new Conexion();
 
@@ -39,38 +39,46 @@ public class VehicleControlerDao {
         }
     }
     
-    public static void buscarVehiclesDb(String buscarVehicle){
+    public List<Vehicle> listarVehicles (){
+        List<Vehicle> vehiculos = new ArrayList<>();
         Conexion db_connect = new Conexion();
         PreparedStatement ps=null;
-        ResultSet rs= null;
 
         try(Connection conexion = db_connect.getConnection()){
-            String query = "SELECT * FROM vehicles WHERE id_vehicle = ?";
+            String query = "select * from vehicle";
             ps=conexion.prepareStatement(query);
-            ps.setString(1, buscarVehicle);
-            rs=ps.executeQuery();
+            ResultSet rs= ps.executeQuery();
             
-             while (rs.next()){
-                String id_vehicle= rs.getNString("");
+            while (rs.next()){
+            Vehicle vehiculo = new Vehicle();
+            //vehiculo.setCarId("ID VEHICLE: " + rs.getInt("id_vehicle") + "\n");
+            vehiculo.setMake ("MAKE: " + rs.getString("make") + "\n");
+            vehiculo.setBrand("BRAND: " + rs.getString("brand") + "\n");
+            vehiculo.setYear("YEAR: " + rs.getString("year") + "\n");
+            vehiculo.setMiliage("MILIAGE: " + rs.getString("miliage") + "\n");
+            vehiculo.setColor("COLOR: " + rs.getString("color") + "\n");
+            vehiculo.setPrices("PRICES: " + rs.getInt("prices") + "\n");
+            vehiculo.setTypeCar("TYPE CAR: " + rs.getString("type_Car") + "\n");
+            vehiculo.setWarrantyTime("WARRANTY TIME: " + rs.getString("warranty_time") + "\n");
+            //textArea.append("ACCIDENT HISTORY: " + rs.getString("accidentHistory") + "\n");
+          
+            vehiculos.add(vehiculo);
+           
             }
-        }catch (SQLException e){
-            System.out.println("No se pudieron recuperar los mensajes");
-            System.out.println(e);
-        }
+          
+        }catch(SQLException ex){
+                System.out.println(ex);
+            }
+        
+        return vehiculos;
+    }
+   
 
     }
-}
+
+  
+   
+
     
 
 
-
-/*private javax.swing.JTextField txColor;
-    private javax.swing.JTextField txtAWarranty;
-    private javax.swing.JTextField txtAddress;
-    private javax.swing.JTextField txtBrand;
-    private javax.swing.JTextField txtIdVeh;
-    private javax.swing.JTextField txtMake;
-    private javax.swing.JTextField txtMiliage;
-    private javax.swing.JTextField txtPrices;
-    private javax.swing.JTextField txtYear;
-*/
