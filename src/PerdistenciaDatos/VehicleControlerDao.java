@@ -39,32 +39,34 @@ public class VehicleControlerDao extends JFrame{
         }
     }
     
-    public List<Vehicle> listarVehicles (){
-        List<Vehicle> vehiculos = new ArrayList<>();
-        Conexion db_connect = new Conexion();
-        PreparedStatement ps=null;
-
-        try(Connection conexion = db_connect.getConnection()){
-            String query = "select * from vehicle";
-            ps=conexion.prepareStatement(query);
-            ResultSet rs= ps.executeQuery();
-            
-            while (rs.next()){
-            Vehicle vehiculo = new Vehicle();
-            //vehiculo.setCarId("ID VEHICLE: " + rs.getInt("id_vehicle") + "\n");
-            vehiculo.setMake ("MAKE: " + rs.getString("make") + "\n");
-            vehiculo.setBrand("BRAND: " + rs.getString("brand") + "\n");
-            vehiculo.setYear("YEAR: " + rs.getString("year") + "\n");
-            vehiculo.setMiliage("MILIAGE: " + rs.getString("miliage") + "\n");
-            vehiculo.setColor("COLOR: " + rs.getString("color") + "\n");
-            vehiculo.setPrices("PRICES: " + rs.getInt("prices") + "\n");
-            vehiculo.setTypeCar("TYPE CAR: " + rs.getString("type_Car") + "\n");
-            vehiculo.setWarrantyTime("WARRANTY TIME: " + rs.getString("warranty_time") + "\n");
-            //textArea.append("ACCIDENT HISTORY: " + rs.getString("accidentHistory") + "\n");
-          
-            vehiculos.add(vehiculo);
-           
-            }
+    
+    
+//    public List<Vehicle> listarVehicles (){
+//        List<Vehicle> vehiculos = new ArrayList<>();
+//        Conexion db_connect = new Conexion();
+//        PreparedStatement ps=null;
+//
+//        try(Connection conexion = db_connect.getConnection()){
+//            String query = "select * from vehicle";
+//            ps=conexion.prepareStatement(query);
+//            ResultSet rs= ps.executeQuery();
+//            
+//            while (rs.next()){
+//            Vehicle vehiculo = new Vehicle();
+//            //vehiculo.setCarId("ID VEHICLE: " + rs.getInt("id_vehicle") + "\n");
+//            vehiculo.setMake ("MAKE: " + rs.getString("make") + "\n");
+//            vehiculo.setBrand("BRAND: " + rs.getString("brand") + "\n");
+//            vehiculo.setYear("YEAR: " + rs.getString("year") + "\n");
+//            vehiculo.setMiliage("MILIAGE: " + rs.getString("miliage") + "\n");
+//            vehiculo.setColor("COLOR: " + rs.getString("color") + "\n");
+//            vehiculo.setPrices("PRICES: " + rs.getInt("prices") + "\n");
+//            vehiculo.setTypeCar("TYPE CAR: " + rs.getString("type_Car") + "\n");
+//            vehiculo.setWarrantyTime("WARRANTY TIME: " + rs.getString("warranty_time") + "\n");
+//            //textArea.append("ACCIDENT HISTORY: " + rs.getString("accidentHistory") + "\n");
+//          
+//            vehiculos.add(vehiculo);
+//           
+//            }
           
         }catch(SQLException ex){
                 System.out.println(ex);

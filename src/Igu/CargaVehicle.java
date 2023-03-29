@@ -375,24 +375,10 @@ public class CargaVehicle extends javax.swing.JFrame {
     }//GEN-LAST:event_ComboTypeCarActionPerformed
 
     private void bttCarsAvailableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bttCarsAvailableActionPerformed
-       
-   
-//        VehicleControlerDao dao = new VehicleControlerDao();
-//        List<Vehicle>vehiculos = dao.listarVehicles();
-//        
-//        JTextArea textArea = new JTextArea();
-//        for (Vehicle v : vehiculos) {
-//        textArea.append(v.toString());
-//        textArea.append("\n");
-//    }
-//        JFrame frame = new JFrame("Vehículos disponibles");
-//        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-//        frame.add(new JScrollPane(textArea));
-//        frame.pack();
-//        frame.setVisible(true);
-//        frame.setSize(500,500);
-//        
-          
+        ListVehicles listVehicles = new ListVehicles();
+        listVehicles.setVisible(true);
+        listVehicles.setLocationRelativeTo(null);
+           
     }//GEN-LAST:event_bttCarsAvailableActionPerformed
 
 

@@ -85,6 +85,11 @@ public class CargarDatosCliente extends javax.swing.JFrame {
         bttGuardar.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         bttGuardar.setIcon(new javax.swing.ImageIcon("/Users/kathemacbook/Documents/Repaso/Imagenes/Gatos/save.png")); // NOI18N
         bttGuardar.setText("Guardar");
+        bttGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bttGuardarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -241,6 +246,10 @@ public class CargarDatosCliente extends javax.swing.JFrame {
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNameActionPerformed
+
+    private void bttGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bttGuardarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bttGuardarActionPerformed
 
 
 

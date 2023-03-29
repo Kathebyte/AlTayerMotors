@@ -20,13 +20,10 @@ public class Main {
         patalla.setLocationRelativeTo(null);
         
         VehicleControlerDao dao = new VehicleControlerDao();
-       
-        
         
         Conexion conexion = new Conexion();
         try(Connection cnx = conexion.getConnection()) {
-         
-            
+        
         } catch (Exception e) {
         System.out.println(e);
         }
