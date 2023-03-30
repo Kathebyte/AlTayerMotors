@@ -1,7 +1,8 @@
 package Igu;
 
+import PerdistenciaDatos.ControlerDao;
 import backend.Vehicle;
-import PerdistenciaDatos.VehicleControlerDao;
+import PerdistenciaDatos.ControlerDao;
 import java.util.List;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
@@ -352,7 +353,7 @@ public class CargaVehicle extends javax.swing.JFrame {
         String accidentHistory =(String) comboAcciden.getSelectedItem();
         
         Vehicle registro = new Vehicle( make, brand, year, miliage, color, prices, typeCar, warrantyTime, accidentHistory);
-        VehicleControlerDao.createVehicledDB(registro);
+        ControlerDao.createVehicledDB(registro);
         
         
        JOptionPane optionPane = new JOptionPane("The information has been saved successfully.");

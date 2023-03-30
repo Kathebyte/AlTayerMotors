@@ -4,9 +4,11 @@
  */
 package altayermotors;
 
+import Igu.ListCustomers;
 import Igu.PantallaPrincipal;
 import PerdistenciaDatos.Conexion;
-import PerdistenciaDatos.VehicleControlerDao;
+import PerdistenciaDatos.ControlerDao;
+import PerdistenciaDatos.ControlerDao;
 import backend.Vehicle;
 import java.sql.Connection;
 import java.util.List;
@@ -19,7 +21,8 @@ public class Main {
         patalla.setVisible(true);
         patalla.setLocationRelativeTo(null);
         
-        VehicleControlerDao dao = new VehicleControlerDao();
+        ControlerDao dao = new ControlerDao();
+        
         
         Conexion conexion = new Conexion();
         try(Connection cnx = conexion.getConnection()) {
