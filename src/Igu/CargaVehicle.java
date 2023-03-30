@@ -1,18 +1,12 @@
 package Igu;
 
-import PerdistenciaDatos.ControlerDao;
 import backend.Vehicle;
 import PerdistenciaDatos.ControlerDao;
-import java.util.List;
 import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 
 public class CargaVehicle extends javax.swing.JFrame {
     
-   
     public CargaVehicle() {
         initComponents();
     }
@@ -361,8 +355,7 @@ public class CargaVehicle extends javax.swing.JFrame {
        JDialog dialog = optionPane.createDialog("titulo");
        dialog.setAlwaysOnTop(true);
        dialog.setVisible(true);
-        
-        
+             
         cleanCode();
         
     }//GEN-LAST:event_bttGuardarActionPerformed

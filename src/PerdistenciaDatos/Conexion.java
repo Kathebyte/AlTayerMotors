@@ -5,11 +5,11 @@ package PerdistenciaDatos;
 import java.sql.*;
 
 public class Conexion{
-
-
-
+    
+    Connection connection =null;
+    
     public Connection getConnection(){
-        Connection connection =null;
+        
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/al_tayer_motors","root","");
             if(connection != null){
@@ -20,7 +20,12 @@ public class Conexion{
 
             System.out.println(e);
         }
+       
         return connection;
+    }
+    
+    public void closeConection(){
+        connection.close();
     }
     
 }

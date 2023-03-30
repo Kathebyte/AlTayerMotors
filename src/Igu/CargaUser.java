@@ -1,18 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package Igu;
 
 import PerdistenciaDatos.ControlerDao;
 import backend.Customer;
-import PerdistenciaDatos.CustomerContolDao;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
-
 public class CargaUser extends javax.swing.JFrame {
-
 
     public CargaUser() {
         initComponents();
@@ -319,8 +312,8 @@ public class CargaUser extends javax.swing.JFrame {
         String address = txtAddress.getText();
         String email = txtEmail.getText();
         
-       Customer registroUser= new Customer(name, phoneNumber, address, email);
-       ControlerDao.createUserDb(registroUser);
+        Customer registroUser= new Customer(name, phoneNumber, address, email);
+        ControlerDao.createUserDb(registroUser);
        
        JOptionPane optionPane = new JOptionPane("New User has been saved successfully.");
        optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
@@ -328,10 +321,8 @@ public class CargaUser extends javax.swing.JFrame {
        dialog.setAlwaysOnTop(true);
        dialog.setVisible(true);
         
-        
         cleanCode();
-        
-
+      
     }//GEN-LAST:event_bttGuardarCustomerActionPerformed
 
     private void bttSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bttSalirActionPerformed
@@ -343,7 +334,6 @@ public class CargaUser extends javax.swing.JFrame {
             ListaCustomers listaClientes = new ListaCustomers();
             listaClientes.setVisible(true);
             listaClientes.setLocationRelativeTo(null);
-
     }//GEN-LAST:event_bttAllUserActionPerformed
 
   public void cleanCode(){
@@ -354,7 +344,6 @@ public class CargaUser extends javax.swing.JFrame {
         txtAddress.setText("");
         
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bttAllUser;
     private javax.swing.JButton bttGuardarCustomer;

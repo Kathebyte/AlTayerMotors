@@ -1,26 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package Igu;
 
-import javax.swing.JDesktopPane;
-import javax.swing.JDialog;
-import javax.swing.JOptionPane;
-import javax.swing.JTable;
 
-/**
- *
- * @author kathemacbook
- */
 public class PantallaPrincipal extends javax.swing.JFrame {
-    
     
     public PantallaPrincipal() {
         initComponents();
     }
-
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -196,8 +182,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    
+  
     private void VehicleVistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VehicleVistaActionPerformed
         ListarEmployees employee = new ListarEmployees();
         employee.setVisible(true);
@@ -221,8 +206,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
          dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
- 
-  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton VehicleVista;
