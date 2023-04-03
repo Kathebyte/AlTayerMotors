@@ -94,7 +94,7 @@ public class ListVehicles extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Filter by", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Helvetica Neue", 1, 14))); // NOI18N
 
-        comboBuscar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "See all cars", "Name", "ID vehicle" }));
+        comboBuscar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "See all cars", "Make", "ID vehicle" }));
         comboBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBuscarActionPerformed(evt);
@@ -107,7 +107,7 @@ public class ListVehicles extends javax.swing.JFrame {
             }
         });
 
-        btonSearching.setText("Searching");
+        btonSearching.setText("Search");
         btonSearching.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btonSearchingActionPerformed(evt);
