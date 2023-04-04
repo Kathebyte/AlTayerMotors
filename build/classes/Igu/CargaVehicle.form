@@ -100,62 +100,44 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel6" min="-2" pref="45" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtMake" pref="99" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel7" min="-2" pref="45" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="txColor" pref="99" max="32767" attributes="0"/>
-                                          <Component id="txtBrand" max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
+                              <Component id="jLabel6" min="-2" pref="45" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="combMake" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel10" min="-2" pref="67" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="ComboTypeCar" min="-2" pref="108" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel7" min="-2" pref="45" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="ComboTypeCar" min="-2" pref="84" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="comboColor" max="32767" attributes="0"/>
+                                  <Component id="comboBrand" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel12" min="-2" pref="51" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtPrices" min="-2" pref="92" max="-2" attributes="0"/>
+                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtAWarranty" min="-2" pref="71" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel14" min="-2" pref="52" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtYear" min="-2" pref="98" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel13" min="-2" pref="115" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="comboAcciden" min="-2" pref="98" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtAWarranty" min="-2" pref="71" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="bttLimpiar" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="bttSalir" min="-2" pref="100" max="-2" attributes="0"/>
-                                  </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel14" min="-2" pref="52" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="ComboYear" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel12" min="-2" pref="51" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtPrices" min="-2" pref="92" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -163,32 +145,36 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="18" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel5" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtIdVeh" min="-2" pref="53" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="441" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel9" min="-2" pref="67" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="466" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="bttGuardar" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="58" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="txtMiliage" min="-2" pref="87" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="bttCarsAvailable" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
-                                  </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                  <Component id="bttGuardar" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Component id="bttLimpiar" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="bttSalir" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="jLabel9" min="-2" pref="67" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
+                                          <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtMiliage" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="bttCarsAvailable" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -197,47 +183,45 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIdVeh" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtMake" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtPrices" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="combMake" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtBrand" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="comboAcciden" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txColor" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtYear" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="comboBrand" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ComboYear" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ComboTypeCar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtAWarranty" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="comboColor" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="txtAWarranty" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace pref="16" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel11" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="txtMiliage" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ComboTypeCar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel11" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                      <Component id="txtMiliage" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace pref="49" max="32767" attributes="0"/>
+                              <EmptySpace pref="93" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="bttGuardar" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                                   <Component id="bttSalir" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
@@ -256,19 +240,6 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel5">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Helvetica Neue" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Id"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtYear">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtYearActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -284,16 +255,6 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Brand"/>
               </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtIdVeh">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtIdVehActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtMake">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
@@ -333,8 +294,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bttGuardarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtBrand">
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -362,13 +321,22 @@
             <Component class="javax.swing.JComboBox" name="ComboTypeCar">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="6">
+                  <StringArray count="15">
                     <StringItem index="0" value="---"/>
-                    <StringItem index="1" value="Suv"/>
-                    <StringItem index="2" value="Sedan"/>
-                    <StringItem index="3" value="Sport"/>
-                    <StringItem index="4" value="Crossover"/>
-                    <StringItem index="5" value="luxury"/>
+                    <StringItem index="1" value="Sedan"/>
+                    <StringItem index="2" value="Hatchback"/>
+                    <StringItem index="3" value="Coupe"/>
+                    <StringItem index="4" value="Convertible"/>
+                    <StringItem index="5" value="SUV"/>
+                    <StringItem index="6" value="Crossover"/>
+                    <StringItem index="7" value="Pickup truck"/>
+                    <StringItem index="8" value="Van"/>
+                    <StringItem index="9" value="Minivan"/>
+                    <StringItem index="10" value="Sports car"/>
+                    <StringItem index="11" value="Luxury car"/>
+                    <StringItem index="12" value="Electric car"/>
+                    <StringItem index="13" value="Hybrid car"/>
+                    <StringItem index="14" value="Compact car"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -379,29 +347,7 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel13">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Helvetica Neue" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Accident History"/>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JTextField" name="txtPrices">
-            </Component>
-            <Component class="javax.swing.JComboBox" name="comboAcciden">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="3">
-                    <StringItem index="0" value="-"/>
-                    <StringItem index="1" value="YES"/>
-                    <StringItem index="2" value="NO"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
@@ -410,8 +356,6 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Year"/>
               </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txColor">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
@@ -450,6 +394,157 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bttCarsAvailableActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="comboBrand">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="41">
+                    <StringItem index="0" value="----"/>
+                    <StringItem index="1" value="Camry"/>
+                    <StringItem index="2" value="Corolla"/>
+                    <StringItem index="3" value="Civic"/>
+                    <StringItem index="4" value="Accord"/>
+                    <StringItem index="5" value="Altima"/>
+                    <StringItem index="6" value="Maxima"/>
+                    <StringItem index="7" value="Silverado"/>
+                    <StringItem index="8" value="Tahoe"/>
+                    <StringItem index="9" value="Mustang"/>
+                    <StringItem index="10" value="F-150"/>
+                    <StringItem index="11" value="Wrangler"/>
+                    <StringItem index="12" value="Grand Cherokee"/>
+                    <StringItem index="13" value="S-Class"/>
+                    <StringItem index="14" value="E-Class"/>
+                    <StringItem index="15" value="3 Series"/>
+                    <StringItem index="16" value="5 Series"/>
+                    <StringItem index="17" value="A4"/>
+                    <StringItem index="18" value="Q5"/>
+                    <StringItem index="19" value="Sonata"/>
+                    <StringItem index="20" value="Tucson"/>
+                    <StringItem index="21" value="Optima"/>
+                    <StringItem index="22" value="Sorento"/>
+                    <StringItem index="23" value="Golf"/>
+                    <StringItem index="24" value="Tiguan"/>
+                    <StringItem index="25" value="911"/>
+                    <StringItem index="26" value="Panamera"/>
+                    <StringItem index="27" value="488 GTB"/>
+                    <StringItem index="28" value="F8 Tributo"/>
+                    <StringItem index="29" value="Aventador"/>
+                    <StringItem index="30" value="Huracan"/>
+                    <StringItem index="31" value="DB11"/>
+                    <StringItem index="32" value="Vantage"/>
+                    <StringItem index="33" value="720S"/>
+                    <StringItem index="34" value="GT"/>
+                    <StringItem index="35" value="F-Pace"/>
+                    <StringItem index="36" value="XJ"/>
+                    <StringItem index="37" value="Range Rover"/>
+                    <StringItem index="38" value="Discovery"/>
+                    <StringItem index="39" value="RX"/>
+                    <StringItem index="40" value="LS"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="combMake">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="21">
+                    <StringItem index="0" value="---"/>
+                    <StringItem index="1" value="Toyota"/>
+                    <StringItem index="2" value="Honda"/>
+                    <StringItem index="3" value="Nissan"/>
+                    <StringItem index="4" value="Chevrolet"/>
+                    <StringItem index="5" value="Ford"/>
+                    <StringItem index="6" value="Jeep"/>
+                    <StringItem index="7" value="Mercedes-Benz"/>
+                    <StringItem index="8" value="BMW"/>
+                    <StringItem index="9" value="Audi"/>
+                    <StringItem index="10" value="Hyundai"/>
+                    <StringItem index="11" value="Kia"/>
+                    <StringItem index="12" value="Volkswagen"/>
+                    <StringItem index="13" value="Porsche"/>
+                    <StringItem index="14" value="Ferrari"/>
+                    <StringItem index="15" value="Lamborghini"/>
+                    <StringItem index="16" value="Aston Martin"/>
+                    <StringItem index="17" value="McLaren"/>
+                    <StringItem index="18" value="Jaguar"/>
+                    <StringItem index="19" value="Land Rover"/>
+                    <StringItem index="20" value="Lexus"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="combMakeActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="comboColor">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="22">
+                    <StringItem index="0" value="---"/>
+                    <StringItem index="1" value="White"/>
+                    <StringItem index="2" value="Black"/>
+                    <StringItem index="3" value="Gray"/>
+                    <StringItem index="4" value="Silver"/>
+                    <StringItem index="5" value="Gold"/>
+                    <StringItem index="6" value="Red"/>
+                    <StringItem index="7" value="Blue"/>
+                    <StringItem index="8" value="Green"/>
+                    <StringItem index="9" value="Yellow"/>
+                    <StringItem index="10" value="Orange"/>
+                    <StringItem index="11" value="Brown"/>
+                    <StringItem index="12" value="Beige"/>
+                    <StringItem index="13" value="Purple"/>
+                    <StringItem index="14" value="Pink"/>
+                    <StringItem index="15" value="Turquoise"/>
+                    <StringItem index="16" value="Copper"/>
+                    <StringItem index="17" value="Bronze"/>
+                    <StringItem index="18" value="Olive Green"/>
+                    <StringItem index="19" value="Smoky Gray"/>
+                    <StringItem index="20" value="Pearl White"/>
+                    <StringItem index="21" value="Navy Blue"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboColorActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="ComboYear">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="14">
+                    <StringItem index="0" value="---"/>
+                    <StringItem index="1" value="2012"/>
+                    <StringItem index="2" value="2013"/>
+                    <StringItem index="3" value="2014"/>
+                    <StringItem index="4" value="2015"/>
+                    <StringItem index="5" value="2016"/>
+                    <StringItem index="6" value="2017"/>
+                    <StringItem index="7" value="2018"/>
+                    <StringItem index="8" value="2019"/>
+                    <StringItem index="9" value="2020"/>
+                    <StringItem index="10" value="2021"/>
+                    <StringItem index="11" value="2022"/>
+                    <StringItem index="12" value="2023"/>
+                    <StringItem index="13" value=" "/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboYearActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>

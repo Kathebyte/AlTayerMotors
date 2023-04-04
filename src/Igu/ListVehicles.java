@@ -171,6 +171,11 @@ public class ListVehicles extends javax.swing.JFrame {
             }
         ));
         tableVehicles.setToolTipText("");
+        tableVehicles.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentMoved(java.awt.event.ComponentEvent evt) {
+                tableVehiclesComponentMoved(evt);
+            }
+        });
         jScrollPane1.setViewportView(tableVehicles);
 
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
@@ -249,6 +254,10 @@ public class ListVehicles extends javax.swing.JFrame {
         mostrarVehicles(option, valorBuscado);
         
     }//GEN-LAST:event_btonSearchingActionPerformed
+
+    private void tableVehiclesComponentMoved(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_tableVehiclesComponentMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tableVehiclesComponentMoved
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btonSearching;

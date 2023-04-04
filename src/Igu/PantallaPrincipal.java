@@ -33,6 +33,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         btCargarDatos = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         VehicleVista = new javax.swing.JButton();
+        btonSales = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         jMenuItem1.setText("jMenuItem1");
@@ -101,6 +102,14 @@ public class PantallaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        btonSales.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btonSales.setText("Sale Car");
+        btonSales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btonSalesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -113,9 +122,9 @@ public class PantallaPrincipal extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(VehicleVista, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btCargarDatos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(bttCargarVehicle, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)))
+                    .addComponent(btCargarDatos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bttCargarVehicle, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
+                    .addComponent(btonSales, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE))
                 .addContainerGap(124, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -127,7 +136,9 @@ public class PantallaPrincipal extends javax.swing.JFrame {
                 .addComponent(bttCargarVehicle, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(VehicleVista, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(btonSales, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20))
         );
@@ -207,9 +218,17 @@ public class PantallaPrincipal extends javax.swing.JFrame {
          dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void btonSalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btonSalesActionPerformed
+        CargarSales cargarSales = new CargarSales();
+        cargarSales.setVisible(true);
+        cargarSales.setLocationRelativeTo(null);
+        
+    }//GEN-LAST:event_btonSalesActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton VehicleVista;
     private javax.swing.JButton btCargarDatos;
+    private javax.swing.JButton btonSales;
     private javax.swing.JButton bttCargarVehicle;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;

@@ -185,6 +185,9 @@
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
+          <Events>
+            <EventHandler event="componentMoved" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="tableVehiclesComponentMoved"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
