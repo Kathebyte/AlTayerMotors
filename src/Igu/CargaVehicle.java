@@ -2,6 +2,9 @@ package Igu;
 
 import backend.Vehicle;
 import PerdistenciaDatos.ControlerDao;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
@@ -310,6 +313,7 @@ public class CargaVehicle extends javax.swing.JFrame {
         combMake.setSelectedIndex(0);
         
     }
+    
     private void bttGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bttGuardarActionPerformed
         String make= (String) combMake.getSelectedItem();
         String brand= (String) comboBrand.getSelectedItem();
@@ -321,9 +325,12 @@ public class CargaVehicle extends javax.swing.JFrame {
         String warrantyTime =txtAWarranty.getText();
      
         Vehicle registro = new Vehicle(make, brand, year, miliage, color, prices, typeCar, warrantyTime, warrantyTime);
-        ControlerDao.createVehicledDB(registro);
-        
-        
+        try {
+            ControlerDao.createVehicledDB(registro);
+        } catch (SQLException ex) {
+            Logger.getLogger(CargaVehicle.class.getName()).log(Level.SEVERE, null, ex);
+        }
+          
        JOptionPane optionPane = new JOptionPane("The information has been saved successfully.");
        optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
        JDialog dialog = optionPane.createDialog("titulo");

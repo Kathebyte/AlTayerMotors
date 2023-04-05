@@ -167,7 +167,6 @@
                                           <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="txtMiliage" min="-2" pref="87" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
                               </Group>

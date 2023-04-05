@@ -254,8 +254,7 @@ public class CargarSales extends javax.swing.JFrame {
         ListVehicles   listVehicles = new ListVehicles();
         listVehicles.setVisible(true);
         listVehicles.setLocationRelativeTo(null);
-        
-        
+  
     }//GEN-LAST:event_botonVehicleIdActionPerformed
 
     private void bttonIDEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bttonIDEmployeeActionPerformed

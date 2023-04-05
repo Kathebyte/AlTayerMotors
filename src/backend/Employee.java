@@ -21,7 +21,7 @@ public class Employee extends User implements Serializable{
     String salary;
     String jobPosition;
 
-    public Employee(String salary, String jobPosition, String name, String phoneNumber, String address, String email) {
+    public Employee( String name, String phoneNumber, String address, String email,String salary, String jobPosition) {
         super(name, phoneNumber, address, email);
         this.salary = salary;
         this.jobPosition = jobPosition;
